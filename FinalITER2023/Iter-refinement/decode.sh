@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0 python generate.py \
+    --domain=race \
+    --setup=race \
+    --test-set=train \
+    --output-name=test \
+    --enforce-template-strategy=flexible \
+    --sample-times=3 \
+    --sampling-topk=10 \
+    --sampling-topp=0.9 \
+    --do-sampling \
+    --ckpt-dir=../checkpoints/race

@@ -1,0 +1,14 @@
+CUDA_VISIBLE_DEVICES=0 python train.py \
+        --data-path=../data/ \
+        --domain=race \
+        --exp-name=demo \
+        --save-interval=5 \
+        --max-epoch=50 \
+        --warmup-updates=100 \
+        --train-set=train \
+        --valid-set=dev \
+        --tensorboard-logdir=tboard/race \
+        --lr=5e-4 \
+        --quiet \
+        --max-samples=32 \
+        --predict-keyphrase-offset \
