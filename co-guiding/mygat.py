@@ -549,7 +549,7 @@ class intent_hgat(nn.Module):
         
         intent_out, _ = self.__global_graph(h_intent, slot_embedding, adj_i, adj_s, adj_is, adj_si)
         # Calculate n-gram scores for named entities
-ngram_size = 2  # Change this as needed
+ngram_size = 3  # Change this as needed
 ngram_scores = Counter()
 current_ngram = []
 
